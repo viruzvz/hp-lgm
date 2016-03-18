@@ -1,0 +1,90 @@
+////////// TOPO por carlosvz
+.topo {
+  position: relative;
+}
+.white-target {
+  position: relative;
+  height: 20px;
+  width: 35%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top:10px;
+  &:after {
+    background-image: url('../img/bg-after.png');
+    position: absolute;
+    right: -17px;
+    content: "";
+    width: 17px;
+    height: 22px;
+  }
+}
+.navbar-toggle--lgm {
+  background-color: @color-primary;
+  margin-top: 30px;
+  span {
+    background-color: #fff;
+  }
+}
+.head-admin {
+  background-color: #333;
+}
+.head-menu--navbar-brand {
+  padding-top:0;
+  padding-bottom: 0;
+  font-size: inherit;
+  line-height: inherit;
+  height: inherit;
+}
+.head-menu { 
+    margin-top: 30px;
+    float: right;
+    > li {
+      font-family:@font-default;
+      list-style: none;
+      display: inline;
+      font-size: 16px;
+      padding-left: 5px;
+      font-weight: bold;
+      > a {
+        color:@color-default;
+        &:hover {
+          background-color: transparent;
+          text-decoration: none;
+          color:@color-hover;
+        }
+        &:before {
+          background-color: @color-primary;
+        }
+      }
+    }
+}
+.menu-admin {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color:#fff;
+  font-size: 12px;
+  ul {
+    display: inline;
+     li {
+      display: inline;
+      > a {
+        padding:0;
+        color:#c7eaf5;
+        &:hover {
+          color:@color-hover; 
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-sm-max) {
+  .head-menu { 
+    float: none;
+    > li {
+      border-bottom: 1px dotted #ccc;
+      display: block;
+    }
+  }
+}
