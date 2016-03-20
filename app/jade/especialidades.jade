@@ -1,12 +1,20 @@
+block .carousel.spacer-lg
+.carousel.spacer-lg.hide
+  .row
+    .col-md-12
+      .text-center
+        h1.header-default ESPECIALIDADES
+block .container.spacer-lg
 .container.spacer-lg
   .row
     .col-md-12
       .especialidades
         .row
           .col-md-12
-            h2 ESPECIALIDADES
-              a.link-especialidades(href="#")
-                small Ver todos »
+            block h2
+              h2 ESPECIALIDADES
+                a.link-especialidades(href="especialidades.html")
+                  small Ver todos »
           .col-md-3.spacer-md
             a(href="#" title="Direito Ambiental")
               img.img-responsive(src="img/icon-lgm-ambiental.png" alt="Direito Ambiental")
